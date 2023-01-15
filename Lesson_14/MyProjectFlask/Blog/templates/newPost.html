@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<h2 align="center">Create new post</h2>
+{% endblock %}
+
+{% block content %}
+<form method="POST">
+  <div class="form-outline mb-4">
+    <input type="text" id="form6Example3" class="form-control" name="author"/>
+    <label class="form-label" for="form6Example3">Author</label>
+  </div>
+
+  <div class="form-outline mb-4">
+    <input type="text" id="form6Example4" class="form-control" name="title"/>
+    <label class="form-label" for="form6Example4">Title</label>
+  </div>
+
+  <div class="form-outline mb-4">
+    <textarea class="form-control" id="form6Example7" rows="4"name="content"></textarea>
+    <label class="form-label" for="form6Example7">Content</label>
+  </div>
+
+  <button type="submit" class="btn btn-primary btn-block mb-4">Create new post</button>
+</form>
+
+{% endblock %}
